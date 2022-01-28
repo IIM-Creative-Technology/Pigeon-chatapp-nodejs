@@ -25,14 +25,14 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // General welcome
-    socket.emit('message', formatMessage("WebCage", 'Messages are limited to this room! '));
+    socket.emit('message', formatMessage("Annonceur", 'Bienvenue dans le salon !'));
 
     // Broadcast everytime users connects
     socket.broadcast
       .to(user.room)
       .emit(
         'message',
-        formatMessage("WebCage", `${user.username} has joined the room`)
+        formatMessage("Annonceur", `${user.username} vous a rejoint !`)
       );
 
     // Current active users and room name
@@ -56,7 +56,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage("WebCage", `${user.username} has left the room`)
+        formatMessage("Annonceur", `${user.username} a quitté le salon.`)
       );
 
       // Current active users and room name
