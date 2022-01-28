@@ -1,0 +1,29 @@
+{
+  "name": "pigeon-chatapp-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIM-Creative-Technology/Pigeon-chatapp-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIM-Creative-Technology/Pigeon-chatapp-nodejs/issues"
+  },
+  "homepage": "https://github.com/IIM-Creative-Technology/Pigeon-chatapp-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1",
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
